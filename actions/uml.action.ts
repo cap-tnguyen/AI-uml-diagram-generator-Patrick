@@ -2,6 +2,10 @@
 import { diagramTemplates } from '@/constants'
 import { GoogleGenerativeAI } from '@google/generative-ai'
 
+if (!process.env.GOOGLE_GENERATIVE_AI_API_KEY) {
+  throw new Error('Missing GOOGLE_GENERATIVE_AI_API_KEY in environment variables')
+}
+
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GENERATIVE_AI_API_KEY!)
 const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-exp' })
 
