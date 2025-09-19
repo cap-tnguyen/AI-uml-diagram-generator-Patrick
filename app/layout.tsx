@@ -6,20 +6,19 @@ import type { Metadata } from 'next'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-	title: 'AI UML Generator by Hamidul Islam | Create UML Diagrams Instantly',
+	title: 'AI UML Generator | Create UML Diagrams Instantly',
 	description:
 		'Generate UML diagrams from natural language using AI. Fast, easy, and accurate UML diagram generation by Hamidul Islam.',
 	keywords: [
 		'UML diagrams',
 		'AI UML generator',
-		'Hamidul Islam',
 		'UML from natural language',
 		'UML tool',
 		'AI diagram generator',
 	],
 	authors: [{ name: 'Hamidul Islam', url: 'https://umlai.vercel.app' }],
 	openGraph: {
-		title: 'AI UML Generator by Hamidul Islam',
+		title: 'AI UML Generator',
 		description:
 			'Generate UML diagrams from natural language using AI. Fast, easy, and accurate UML diagram generation by Hamidul Islam.',
 		url: 'https://umlai.vercel.app',
@@ -29,7 +28,7 @@ export const metadata: Metadata = {
 				url: 'https://umlai.vercel.app/cover.png', // Add an OpenGraph image for social sharing
 				width: 1200,
 				height: 630,
-				alt: 'AI UML Generator by Hamidul Islam',
+				alt: 'AI UML Generator',
 			},
 		],
 		locale: 'en_US',
